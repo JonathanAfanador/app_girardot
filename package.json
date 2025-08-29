@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "joi": "^17.13.3",
+    "node-cache": "^5.1.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.0.2"
+  }
+}

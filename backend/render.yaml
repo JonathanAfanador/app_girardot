@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: mi-backend-render
+    runtime: node
+    buildCommand: npm install && npm run build
+    startCommand: node app.js
+    envVars:
+      - key: PORT
+        value: 3000
+      - key: JWT_SECRET
+        value: tu_clave_secreta_unica_y_compleja # Cambia esto
+      - key: DATABASE_URL
+        value: postgres://usuario:contraseña@host:5432/nombre_db
